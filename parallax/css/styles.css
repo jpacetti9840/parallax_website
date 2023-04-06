@@ -1,0 +1,85 @@
+@charset "UTF-8";
+body, html {
+	height:100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-wight: 400;
+	line-height: 1.8em;
+	color: #666;
+}
+
+.pimg1, .pimg2, .pimg3 {
+	position: relative;
+	opacity:0.70;
+	background-position: center;
+	background-size: color;
+	background-repeat: no-repeat;
+	/*
+	fixed=parallax
+	scroll=normal
+	*/
+	backgrounf-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url("../images/yellowstone.jpeg");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg2{
+    background-image: url("../images/49942081632_5279c907b5_o (1).jpg");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pimg3{
+	background-image:url("../images/rocky_mountain.jpg");
+	min-height: 400px;
+		
+}
+
+.section{
+	text-align:center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color:#FFC090;
+	color: #666;
+}
+
+.section-dark{
+	background-color:#8DACCE;
+	color: #ddd;
+}
+
+.ptext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color:#000;
+	font-size:27px;
+	letter-spacing:8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color:#98C0C2;
+	color: #fff;
+	padding: 20px;
+}
+
+.ptext .border .trans{
+	background-color: transparent;
+}
+
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
